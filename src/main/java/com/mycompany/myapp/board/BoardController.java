@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class BoardController {
 
     @Autowired
-    BoardDAO boardDAO;
+    BoardService boardService;
 
-    @RequestMapping(value = "/board/list", method = RequestMethod.GET)
+    @RequestMapping(value="/board/list", method = RequestMethod.GET)
     public String boardlist(Model model) {
-        model.addAttribute("list", boardDAO.getBoardList());
+        model.addAttribute("list", boardService.getBoardList());
         return "posts";
     }
 
@@ -26,7 +26,7 @@ public class BoardController {
 
     @RequestMapping(value = "/board/addok", method = RequestMethod.POST)
     public String addPostOK(BoardVO vo) {
-        int i = boardDAO.insertBoard(vo);
+        int i = boardService.insertBoard(vo);
         if(i == 0)
             System.out.println("데이터 추가 실패 ");
         else
@@ -36,14 +36,14 @@ public class BoardController {
 
     @RequestMapping(value = "/board/editform/{id}", method = RequestMethod.GET)
     public String editPost(@PathVariable("id") int id, Model model) {
-        BoardVO boardVO = boardDAO.getBoard(id);
+        BoardVO boardVO = boardService.getBoard(id);
         model.addAttribute("boardVO", boardVO);
         return "editform";
     }
 
     @RequestMapping(value = "/board/editok", method = RequestMethod.POST)
     public String editPostOK(BoardVO vo) {
-        int i = boardDAO.updateBoard(vo);
+        int i = boardService.updateBoard(vo);
         if(i == 0)
             System.out.println("데이터 수정 실패 ");
         else
@@ -53,7 +53,7 @@ public class BoardController {
 
     @RequestMapping(value = "/board/deleteok/{id}", method = RequestMethod.GET)
     public String deletePostOk(@PathVariable("id") int id) {
-        int i = boardDAO.deleteBoard(id);
+        int i = boardService.deleteBoard(id);
         if(i == 0)
             System.out.println("데이터 삭제 실패 ");
         else

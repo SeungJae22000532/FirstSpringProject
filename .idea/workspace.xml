@@ -9,31 +9,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64155e17-7996-470a-b837-25d69925fc56" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/board/BoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/board/BoardDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/board/BoardVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addpostform.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editform.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/posts.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/temp/addpost.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/temp/deletepost.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/temp/editpost.jsp" afterDir="false" />
+    <list default="true" id="64155e17-7996-470a-b837-25d69925fc56" name="Changes" comment="Create Spring Project">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/board/BoardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/board/BoardServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/member/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/member/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/member/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/member/UserVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/util/LoginCheckInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/board-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/user-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/img/tree.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/img/tree.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/board/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/board/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/board/BoardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/board/BoardDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,10 +42,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="Interface" />
-        <option value="Class" />
         <option value="CSS File" />
+        <option value="Interface" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,15 +74,16 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/한동대학교/3학년_2학기/실전프로젝트1/Java_Project/TestProject5-2/src/main/webapp/WEB-INF/views",
+    "last_opened_file_path": "D:/한동대학교/3학년_2학기/실전프로젝트1/Java_Project/TestProject5-2/src/main/webapp/WEB-INF/img",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "cce8536ccd1943be78167e0d92bccb33"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -100,11 +96,15 @@
       <recent name="com.mycompany.myapp" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\한동대학교\3학년_2학기\실전프로젝트1\Java_Project\TestProject5-2\src\main\webapp\WEB-INF\img" />
       <recent name="D:\한동대학교\3학년_2학기\실전프로젝트1\Java_Project\TestProject5-2\src\main\webapp\WEB-INF\views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\한동대학교\3학년_2학기\실전프로젝트1\Java_Project\TestProject5-2\src\main\webapp\temp" />
-      <recent name="D:\한동대학교\3학년_2학기\실전프로젝트1\Java_Project\TestProject5-2\src\main\webapp\WEB-INF\view" />
+      <recent name="D:\한동대학교\3학년_2학기\실전프로젝트1\Java_Project\TestProject5-2\src\main\resources\mapper" />
+      <recent name="D:\한동대학교\3학년_2학기\실전프로젝트1\Java_Project\TestProject5-2\src\main" />
+      <recent name="D:\한동대학교\3학년_2학기\실전프로젝트1\Java_Project\TestProject5-2\src\main\webapp\mapper" />
+      <recent name="D:\한동대학교\3학년_2학기\실전프로젝트1\Java_Project\TestProject5-2\src\main\webapp\resources" />
+      <recent name="D:\한동대학교\3학년_2학기\실전프로젝트1\Java_Project\TestProject5-2\src\main\webapp" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -207,8 +207,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669965558776</updated>
-      <workItem from="1669965560046" duration="19634000" />
+      <workItem from="1669965560046" duration="20105000" />
+      <workItem from="1670084000893" duration="1863000" />
+      <workItem from="1670135802815" duration="8706000" />
+      <workItem from="1670161544149" duration="2983000" />
+      <workItem from="1670232627490" duration="57000" />
+      <workItem from="1670233187755" duration="4098000" />
+      <workItem from="1670565605906" duration="9158000" />
     </task>
+    <task id="LOCAL-00001" summary="Create Spring Project">
+      <created>1670082553232</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670082553232</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,5 +238,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create Spring Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Spring Project" />
   </component>
 </project>
